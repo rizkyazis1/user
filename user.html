@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            #username;
+            #email;
+            #password;
+            #umur;
+            set username (namanya){
+                this.#username = namanya;
+            }
+            get username(){
+                return this.#username;
+            }
+            set email (emailnya){
+                this.#email = emailnya;
+            }
+            get email(){
+                return this.#email;
+            }
+            set password (passwordnya){
+                this.#password = passwordnya;
+            }
+            get password(){
+                return this.#password;
+            }
+            set umur (umurnya){
+                this.#umur = umurnya;
+            }
+            get umur(){
+                return this.#umur;
+            }
+        }
+        var user1 = new user();
+        user1.username = "rizky";
+        user1.email = "email123";
+        user1.password = "ytta";
+        user1.umur = "20 tahun"
+        document.write("namanya = " + user1.username + "<br />")
+        document.write("emailnya = " + user1.email + "<br />")
+        document.write("passwordnya = " + user1.password + "<br />")
+        document.write("umurnya = " + user1.umur + "<br />")
+        document.write("<hr />")
+    </script>
+</body>
+</html>
